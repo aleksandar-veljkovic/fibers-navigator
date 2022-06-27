@@ -1,0 +1,139 @@
+.shipment-panel {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+    padding: 20px;
+    position: relative;
+    border: 2px solid rgb(237, 237, 237);
+
+    &.not-last {
+        &.confirmed {
+            &::after {
+                border-top: 20px solid $success-green;
+            }
+        }
+
+        &::after {
+            z-index: 100;
+            position: absolute;
+            bottom: -20px;
+            left: calc(50% - 20px);
+            content: '';
+            display: block;
+
+            width: 0; 
+            height: 0; 
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            
+            border-top: 20px solid rgb(237, 237, 237);
+        }
+    }
+
+    &.confirmed {
+        border: 2px solid $success-green;
+
+        .confirmation-status {
+            color: $success-green !important;
+        }
+    }
+
+    .shipment-attribute-wrap {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        color: black;
+
+        .attribute-title {
+            color: $pale-gray;
+            font-size: 12px;
+            font-weight: 500;
+        }
+    
+        .attribute-value {
+            margin-top: 5px;
+            font-size: 14px;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .attribute-hash {
+            margin-top: 5px;
+            font-size: 12px;
+            margin-bottom: 5px;
+            font-weight: 500;
+            width: 200px;
+            word-break: break-all;
+            color: $pale-gray
+        }
+
+        .item-label, .shipment-label {
+            margin-top: 5px;
+        }
+    }
+
+    .shipment-panel-header {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .confirmation-status {
+            color: $pale-gray;
+            width: 100%;
+            position: absolute;
+            top: 30px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .title-wrap {
+            display: flex;
+            flex-direction: row;
+
+            .shipment-icon {
+                color: $pale-gray;
+            }
+        }
+    }
+
+    .shipment-panel-body {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+
+        .shipment-attribute-wrap {
+            margin-bottom: 10px;
+        }
+
+        .shipment-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding-top: 10px;  
+        }
+
+        .sent-shipment-data {
+            padding-right: 20px;
+        }
+
+        .received-shipment-data {
+            padding-left: 20px;
+            border-left: 1px solid $pale-gray;
+        }
+    }
+
+    .date-mass-attributes {
+        display: flex;
+        flex-direction: row;
+
+        .shipment-attribute-wrap {
+            flex: 1;
+        }
+    }
+}

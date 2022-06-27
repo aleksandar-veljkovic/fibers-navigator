@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="171.876" height="54.537" viewBox="0 0 171.876 54.537">
+  <g id="Group_1" data-name="Group 1" transform="translate(-29.124 -28.826)">
+    <path id="Path_37" data-name="Path 37" d="M4.933,0s6.837,13.581.693,22.687S-2.485,38.7,4.093,47.926" transform="matrix(-0.259, 0.966, -0.966, -0.259, 88.218, 56.782)" fill="none" stroke="#61abe2" stroke-linejoin="bevel" stroke-width="9"/>
+    <path id="Path_38" data-name="Path 38" d="M0,.052,16.965,0,18.8,24.777,3.764,22.936Z" transform="matrix(0.866, 0.5, -0.5, 0.866, 60.95, 39.147)" fill="#fff"/>
+    <path id="Path_36" data-name="Path 36" d="M6.417,0S-7.062,16.78,5.05,28.03,21.041,47.812,8.072,59.213" transform="translate(85.617 34.195) rotate(60)" fill="none" stroke="#cc4866" stroke-linejoin="bevel" stroke-width="9"/>
+    <text id="fibers" transform="translate(106 68)" font-size="37" font-family="Ubuntu-Light, Ubuntu" font-weight="300"><tspan x="0" y="0">fibers</tspan></text>
+  </g>
+</svg>
